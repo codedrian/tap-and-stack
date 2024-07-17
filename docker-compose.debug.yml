@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  tapandstack:
+    image: tapandstack
+    build:
+      context: .
+      dockerfile: ./Dockerfile

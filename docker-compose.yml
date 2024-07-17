@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  php:
+    build:
+      dockerfile: ./dockerize/php/Dockerfile
+    ports:
+    - "8080:80"
+    volumes:
+      - ./tap-and-stack:/var/www/html

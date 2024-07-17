@@ -1,2 +1,4 @@
-# Tap & Stack
-Fun and fast-paced game to test your click reflexes and build virtual wealth.
+sudo chown codedrian:codedrian
+
+## Problem:
+- Laravel's title is appearing in browser but the page content doesn't.

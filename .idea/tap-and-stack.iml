@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/tap-and-stack/app" isTestSource="false" packagePrefix="App\" />
+      <sourceFolder url="file://$MODULE_DIR$/tap-and-stack/database/factories" isTestSource="false" packagePrefix="Database\Factories\" />
+      <sourceFolder url="file://$MODULE_DIR$/tap-and-stack/database/seeders" isTestSource="false" packagePrefix="Database\Seeders\" />
+      <sourceFolder url="file://$MODULE_DIR$/tap-and-stack/tests" isTestSource="true" packagePrefix="Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/tap-and-stack/tests/Feature" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/tap-and-stack/tests/Unit" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/brick/math" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/carbonphp/carbon-doctrine-types" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/dflydev/dot-access-data" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/doctrine/inflector" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/doctrine/lexer" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/dragonmantank/cron-expression" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/egulias/email-validator" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/fakerphp/faker" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/filp/whoops" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/fruitcake/php-cors" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/graham-campbell/result-type" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/guzzlehttp/guzzle" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/guzzlehttp/promises" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/guzzlehttp/psr7" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/guzzlehttp/uri-template" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/hamcrest/hamcrest-php" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/laravel/framework" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/laravel/pint" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/laravel/prompts" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/laravel/sail" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/laravel/serializable-closure" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/laravel/tinker" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/league/commonmark" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/league/config" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/league/flysystem" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/league/flysystem-local" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/league/mime-type-detection" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/mockery/mockery" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/monolog/monolog" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/myclabs/deep-copy" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/nesbot/carbon" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/nette/schema" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/nette/utils" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/nikic/php-parser" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/nunomaduro/collision" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/nunomaduro/termwind" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/phar-io/manifest" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/phar-io/version" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/phpoption/phpoption" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/phpunit/php-code-coverage" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/phpunit/php-file-iterator" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/phpunit/php-invoker" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/phpunit/php-text-template" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/phpunit/php-timer" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/phpunit/phpunit" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/psr/clock" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/psr/container" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/psr/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/psr/http-client" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/psr/http-factory" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/psr/http-message" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/psr/simple-cache" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/psy/psysh" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/ralouphie/getallheaders" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/ramsey/collection" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/ramsey/uuid" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/sebastian/cli-parser" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/sebastian/code-unit" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/sebastian/code-unit-reverse-lookup" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/sebastian/comparator" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/sebastian/complexity" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/sebastian/diff" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/sebastian/environment" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/sebastian/exporter" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/sebastian/global-state" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/sebastian/lines-of-code" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/sebastian/object-enumerator" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/sebastian/object-reflector" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/sebastian/recursion-context" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/sebastian/type" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/sebastian/version" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/symfony/clock" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/symfony/console" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/symfony/css-selector" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/symfony/deprecation-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/symfony/error-handler" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/symfony/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/symfony/event-dispatcher-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/symfony/finder" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/symfony/http-foundation" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/symfony/http-kernel" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/symfony/mailer" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/symfony/mime" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/symfony/polyfill-ctype" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/symfony/polyfill-intl-grapheme" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/symfony/polyfill-intl-idn" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/symfony/polyfill-intl-normalizer" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/symfony/polyfill-php72" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/symfony/polyfill-php80" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/symfony/polyfill-php83" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/symfony/polyfill-uuid" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/symfony/process" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/symfony/routing" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/symfony/service-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/symfony/string" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/symfony/translation" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/symfony/translation-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/symfony/uid" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/symfony/var-dumper" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/symfony/yaml" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/theseer/tokenizer" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/tijsverkoyen/css-to-inline-styles" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/vlucas/phpdotenv" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/voku/portable-ascii" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/webmozart/assert" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
