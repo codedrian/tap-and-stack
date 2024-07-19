@@ -116,6 +116,10 @@
       <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/vlucas/phpdotenv" />
       <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/voku/portable-ascii" />
       <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/webmozart/assert" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/inertiajs/inertia-laravel" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/laravel/breeze" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/laravel/sanctum" />
+      <excludeFolder url="file://$MODULE_DIR$/tap-and-stack/vendor/tightenco/ziggy" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
