@@ -1,11 +1,40 @@
-version: '3.4'
+
+networks:
+  laravel_environment:
+    driver: bridge
 
 services:
+#App server
   php:
     build:
-      dockerfile: ./dockerize/php/Dockerfile
+      dockerfile: ./php/Dockerfile
     ports:
-    - "8080:80"
+    - "80:80"
     - "5173:5173"
     volumes:
       - ./tap-and-stack:/var/www/html
+
+  #MYSQL Service
+  db:
+    image: mysql:5.7
+    platform: 'linux/x86_64'
+    container_name: db
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: "root"
+      MYSQL_USER: user
+      MYSQL_PASSWORD: "password"
+      MYSQL_DATABASE: adrian_project
+      MYSQL_ALLOW_EMPTY_PASSWORD: 1
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - 8001:80
+    environment:
+      - PMA_ARBITRARY=1
+      - PMA_HOST=db
+      - PMS_PORT=3306
+    depends_on:
+      - db
