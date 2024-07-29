@@ -20,6 +20,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'balance',
     ];
 
     /**
@@ -44,4 +45,8 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+    /*Sets default value*/
+    protected $attributes = [
+        'balance' => 500.00,
+    ];
 }
