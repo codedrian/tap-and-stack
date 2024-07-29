@@ -1,21 +1,34 @@
 <script setup>
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
-import { Head } from '@inertiajs/vue3';
+import BetRiskOption from "@/Components/BetRiskOption.vue";
+import {Head, usePage} from '@inertiajs/vue3';
+import {computed} from "vue";
+const bets = [
+    ["Low Risk", "by -25 up to 100"],
+    ["Moderate Risk", "by -100 up to 1000"],
+    ["High Risk", "by -500 up to 2500"],
+    ["Severe Risk", "by -3000 up to 5000"]
+];
+const page = usePage()
+const user = computed(() =>
+    page.props.auth.user
+);
 </script>
-
+<!--TODO:
+        1.Update the total money
+        2.Add money in user table
+-->
 <template>
     <Head title="Dashboard" />
 
     <AuthenticatedLayout>
         <template #header>
-            <h2 class="font-semibold text-xl text-gray-800 leading-tight">Dashboard</h2>
+            <h2 class="font-semibold text-xl text-gray-800 leading-tight">Your money: {{ user.balance }}</h2>
         </template>
 
-        <div class="py-12">
-            <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-                <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                    <div class="p-6 text-gray-900">You're logged in, Adrian, Holy fucked! it worked</div>
-                </div>
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 flex gap-2">
+            <div v-for="bet of bets" class="w-1/4 py-10">
+                <BetRiskOption :bet=bet[0] :description=bet[1] />
             </div>
         </div>
     </AuthenticatedLayout>
