@@ -19,6 +19,8 @@ services:
     image: mysql:5.7
     platform: 'linux/x86_64'
     container_name: db
+    volumes:
+      - ./mysql-data:/var/lib/mysql
     ports:
       - 3306:3306
     environment:
