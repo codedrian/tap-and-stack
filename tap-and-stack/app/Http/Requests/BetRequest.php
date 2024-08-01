@@ -22,7 +22,9 @@ class BetRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'bet' => ['required', 'String']
+            'bet' => ['required', 'String'],
+            'available_balance' => ['required', 'String'],
+            'user_id' => ['required', 'Integer']
         ];
     }
 }
