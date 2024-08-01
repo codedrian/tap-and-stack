@@ -16,7 +16,6 @@ const user = computed(() =>
 </script>
 <!--TODO:
         1.Update the total money
-        2.Add money in user table
 -->
 <template>
     <Head title="Dashboard" />
@@ -28,7 +27,10 @@ const user = computed(() =>
 
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 flex gap-2">
             <div v-for="bet of bets" class="w-1/4 py-10">
-                <BetRiskOption :bet=bet[0] :description=bet[1] />
+                <BetRiskOption
+                    :bet=bet[0] :description=bet[1] :available_balance=user.balance :user_id=user.id
+                    @result="betResult"
+                />
             </div>
         </div>
     </AuthenticatedLayout>
