@@ -1,5 +1,6 @@
 <script setup>
 import {useForm} from "@inertiajs/vue3";
+import {ref} from "vue";
 
 const props = defineProps({
     bet: {
@@ -9,20 +10,44 @@ const props = defineProps({
     description: {
         type: String,
         required: true
+    },
+    available_balance: {
+        type: Number,
+        required: true
+    },
+    user_id: {
+        type: Number,
+        required: true
     }
 });
 
 const form = useForm({
-    bet: null
+    bet: '',
+    available_balance: null,
+    user_id: null
 });
-
 function submitBet() {
     form.bet = props.bet
+    form.available_balance = props.available_balance
+    form.user_id = props.user_id
+}
+const result = ref();
+const emit = defineEmits(['result'])
+function submitForm() {
+    axios.post('/create', form)
+        .then(response => {
+            console.log(response.data);
+            /*result.value = response.data.result*/
+            emit('result', result.value);
+    })
+        .catch(error => {
+            console.log(error);
+        });
 }
 </script>
 
 <template>
-    <form @submit.prevent="form.post('/create')">
+    <form @submit.prevent="submitForm">
         <div class="overflow-hidden shadow-sm sm:rounded-lg border-2 border-blue-600 text-center">
             <h2>{{ props.bet }}</h2>
             <button type="submit"
