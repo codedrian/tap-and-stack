@@ -13,6 +13,10 @@ const page = usePage()
 const user = computed(() =>
     page.props.auth.user
 );
+
+function betResult(result) {
+    console.log(result);
+}
 </script>
 <!--TODO:
         1.Update the total money
@@ -28,7 +32,7 @@ const user = computed(() =>
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 flex gap-2">
             <div v-for="bet of bets" class="w-1/4 py-10">
                 <BetRiskOption
-                    :bet=bet[0] :description=bet[1] :available_balance=user.balance :user_id=user.id
+                    :bet=bet[0] :description=bet[1] :available_balance="Number(user.balance)" :user_id=user.id
                     @result="betResult"
                 />
             </div>
