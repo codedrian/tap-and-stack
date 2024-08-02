@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Bet extends Model
 {
@@ -19,4 +20,9 @@ class Bet extends Model
         'new_balance',
         'net_winnings'
     ];
+
+    public function user() :BelongsTo
+    {
+        return $this->belongsTo(User::class);
+    }
 }
