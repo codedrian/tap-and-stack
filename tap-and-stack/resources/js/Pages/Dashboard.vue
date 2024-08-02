@@ -2,7 +2,8 @@
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 import BetRiskOption from "@/Components/BetRiskOption.vue";
 import {Head, usePage} from '@inertiajs/vue3';
-import {computed} from "vue";
+import {computed, ref} from "vue";
+
 const bets = [
     ["Low Risk", "by -25 up to 100"],
     ["Moderate Risk", "by -100 up to 1000"],
@@ -14,9 +15,12 @@ const user = computed(() =>
     page.props.auth.user
 );
 
-function betResult(result) {
+function handleResult(result) {
     console.log(result);
+    betResult.value = result;
 }
+
+const betResult = ref([]);
 </script>
 <!--TODO:
         1.Update the total money
@@ -33,9 +37,20 @@ function betResult(result) {
             <div v-for="bet of bets" class="w-1/4 py-10">
                 <BetRiskOption
                     :bet=bet[0] :description=bet[1] :available_balance="Number(user.balance)" :user_id=user.id
-                    @result="betResult"
+                    @result="handleResult"
                 />
             </div>
         </div>
+
+        <!--TODO: Display Bet results here-->
+        <ul v-for="(result, index) in betResult" :key="result.id + '-' + index">
+            <li :class="[result.net_winnings > 0 ? 'text-green-600' : 'text-red-600']">You pushed <span>{{ result.bet }}</span>.
+                Value is
+                <span>{{ result.net_winnings }}.
+                Your
+                current
+                money now is
+                {{ result.new_balance }}</span></li>
+        </ul>
     </AuthenticatedLayout>
 </template>
