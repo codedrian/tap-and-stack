@@ -31,13 +31,14 @@ function submitBet() {
     form.available_balance = props.available_balance
     form.user_id = props.user_id
 }
-const result = ref();
+
+const result = ref([]);
 const emit = defineEmits(['result'])
 function submitForm() {
     axios.post('/create', form)
         .then(response => {
-            console.log(response.data);
-            /*result.value = response.data.result*/
+            /*console.log(response.data);*/
+            result.value = response.data.result
             emit('result', result.value);
     })
         .catch(error => {
