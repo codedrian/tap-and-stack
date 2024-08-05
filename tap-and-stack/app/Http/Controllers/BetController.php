@@ -53,10 +53,13 @@ class BetController extends Controller
             'new_balance' => $new_balance
         ]);
         $user = User::find($validated['user_id']);
-        $result = $user->bets;
+        $user->balance = $bet->new_balance;
+        $user->save();
+        $result = $user->bets()->orderBy('id', 'desc')->get();
 
         return response()->json([
-            'result' => $result
+            'result' => $result,
+            'new_balance' => $bet->new_balance
         ], 201);
     }
 
