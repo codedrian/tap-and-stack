@@ -37,8 +37,7 @@ const emit = defineEmits(['result'])
 function submitForm() {
     axios.post('/create', form)
         .then(response => {
-            /*console.log(response.data);*/
-            result.value = response.data.result
+            result.value = response.data
             emit('result', result.value);
     })
         .catch(error => {
